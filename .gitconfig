@@ -1,0 +1,5 @@
+[init]
+	default = branch
+[user]
+	email = red@offsec.com
+	name = red
