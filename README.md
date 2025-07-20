@@ -14,7 +14,7 @@ Ideally install it on a Kali Linux base installation.
 3) **log out** and in the lightdm login-screen **choose i3** and log in again
 4) Do the **additional steps** noted at the **bottom** of the **script** to finalize the setup
    
-   => mainly **link the files**: 
+   => mainly **link the files** 
    ```sh 
       cd $HOME/.dotfiles 
       stow .
