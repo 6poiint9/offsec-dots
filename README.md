@@ -17,6 +17,8 @@ Ideally install it on a Kali Linux base installation.
       cd $HOME/.dotfiles 
       stow .
    ``` 
-   resolve the possible errors by renaming the file or running
+   resolve the possible **errors** by **renaming the file** or running
  
-   ```stow --adapt . ``` 
+   ```sh 
+   stow --adapt . 
+   ``` 
