@@ -19,7 +19,6 @@ fi
 cd "$DOTFILES_DIR"
 
 # --- install bash autocompletion (ble.sh) ---
-
 echo "--- making bash the default and installing autocomplete ---"
 if [[ "$SHELL" != "/bin/bash" ]]; then
   chsh -s /bin/bash
@@ -35,7 +34,6 @@ if [ ! -d "$HOME/ble.sh" ]; then
 fi
 
 # --- install i3 and tools ---
-
 echo "--- installing tools for i3 wm ---"
 sudo apt install -y vim i3 i3lock suckless-tools nitrogen kitty 
 
@@ -53,6 +51,9 @@ touch ~/.hushlogin
 cd /etc && sudo mv i3status.conf i3status.back && ln ~/.dotfiles/.config/i3status.conf i3status.conf
 
 echo "--- bootstrap complete ---"
-echo "Next steps:"
-echo "[] set up librewolf (background, dark mode)"
+
+# Finalizing steps:
+# () set up librewolf (background, dark mode)
+# () Set up a new background pic for lightdm if needed 
+# () go to $HOM$/.dotfiles and run $ stow .   
 
