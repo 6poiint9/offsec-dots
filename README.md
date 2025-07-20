@@ -1,5 +1,6 @@
 # Offsec dotfiles 👻
 Dotfiles for my offensive secuirty environment, using i3 wm. 
+
 Using GNU stow to manage the files. 
 
 # Installation 
