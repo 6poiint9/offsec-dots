@@ -5,7 +5,7 @@ Dotfiles for my offensive secuirty environment.
 # Installation 
 Ideally install it on a Kali Linux base installation. 
 1) copy the contents of bootstrap.sh into any file for example set_up.sh
-2) give the file execution permissions and run it 
+2) give the file execution permissions and run it:  
     ```sh
     chmod u+x set_up.sh 
     ./set_up.sh 
