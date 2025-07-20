@@ -64,7 +64,7 @@ bindsym $mod+b exec librewolf
 
 bindsym $mod+f exec thunar 
 
-bindsym $mod+d exec i3lock -i /home/red/Pictures/anime.png 
+bindsym $mod+d exec i3lock -i $HOME/.dotfiles/pics/anime.png 
 
 #---------------------------------------------
 # A more modern dmenu replacement is rofi:

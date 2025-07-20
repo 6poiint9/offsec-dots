@@ -4,28 +4,23 @@ set -euo pipefail
 
 # --- Config ---
 DOTFILES_DIR="$HOME/.dotfiles"
-REPO_URL="https://github.com/ben/of-dots"
+REPO_URL="https://github.com/6poiint9/offsec-dots.git"
 
 echo "--- install stow and update system ---"
 sudo apt update
-sudo apt install -y stow git
+sudo apt install -y stow git gawk make 
 
 # --- Clone dotfiles repo if needed ---
+
 if [ ! -d "$DOTFILES_DIR" ]; then
   git clone "$REPO_URL" "$DOTFILES_DIR"
 fi
 
 cd "$DOTFILES_DIR"
 
-# --- stow dotfiles ---
-echo "--- stowing dotfiles ---"
-stow .scripts
-stow .config
-stow zsh
-
 # --- install bash autocompletion (ble.sh) ---
-echo "--- making bash the default and installing autocomplete ---"
 
+echo "--- making bash the default and installing autocomplete ---"
 if [[ "$SHELL" != "/bin/bash" ]]; then
   chsh -s /bin/bash
   echo "Shell changed to bash. You may need to log out and log back in."
@@ -40,8 +35,9 @@ if [ ! -d "$HOME/ble.sh" ]; then
 fi
 
 # --- install i3 and tools ---
+
 echo "--- installing tools for i3 wm ---"
-sudo apt install -y vim i3 i3lock suckless-tools nitrogen
+sudo apt install -y vim i3 i3lock suckless-tools nitrogen kitty 
 
 # --- install additional apps ---
 echo "--- installing librewolf via extrepo ---"
@@ -50,5 +46,13 @@ sudo extrepo enable librewolf
 sudo apt update
 sudo apt install -y librewolf
 
+#--- remove annoying kali message ---"
+touch ~/.hushlogin 
+
+# create simlynk for i3-bar 
+cd /etc && sudo mv i3status.conf i3status.back && ln ~/.dotfiles/.config/i3status.conf i3status.conf
+
 echo "--- bootstrap complete ---"
+echo "Next steps:"
+echo "[] set up librewolf (background, dark mode)"
 
