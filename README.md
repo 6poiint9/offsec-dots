@@ -19,4 +19,4 @@ Ideally install it on a Kali Linux base installation.
    ``` 
    resolve the possible errors by renaming the file or running
  
-   ```sh stow --adapt . ``` 
+   ```stow --adapt . ``` 
