@@ -2,7 +2,7 @@
 
 echo "--- installing tools ---"
 
-sudo apt install nmap snmp braa 
+sudo apt install -y seclists nmap snmp braa  
 
 
 

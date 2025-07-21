@@ -35,7 +35,7 @@ fi
 
 # --- install i3 and tools ---
 echo "--- installing tools for i3 wm ---"
-sudo apt install -y vim i3 i3lock suckless-tools nitrogen kitty 
+sudo apt install -y fastfetch vim nvim i3 i3lock suckless-tools nitrogen kitty npm 
 
 # --- install additional apps ---
 echo "--- installing librewolf via extrepo ---"

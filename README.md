@@ -24,3 +24,16 @@ Ideally install it on a Kali Linux base installation.
    ```sh 
    stow --adapt . 
    ``` 
+
+# Neovim (with Nvchad) setup 
+Once the bootsrap.sh script is done running, and the files have been linked with stow.
+
+=> open up neovim and **install** the **lspservers** with **Mason** 
+
+  ```sh
+  nvim
+  # within neovim  
+  :MasonInstallAll
+  ```
+
+
