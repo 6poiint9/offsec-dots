@@ -1,8 +1,10 @@
 # Offsec dotfiles 👻
-Dotfiles for my offensive secuirty environment, using i3 wm. 
-
+Dotfiles for my offensive secuirty environment, using **i3 wm** on **Kali Linux**.
 Using GNU stow to manage the files. 
 
+Look:
+![image](https://github.com/6poiint9/offsec-dots/blob/main/pics/gitpic.png) 
+ 
 # Installation 
 Ideally install it on a Kali Linux base installation.
 1) **copy** the **contents** of [bootstrap.sh](https://github.com/6poiint9/offsec-dots/blob/main/bootsrap.sh)  into any file for example set_up.sh
