@@ -1,6 +1,7 @@
 # Offsec dotfiles 👻
 Dotfiles for my offensive secuirty environment, using **i3 wm** on **Kali Linux**.
-    Using **GNU stow** to manage the files. 
+    
+Using **GNU stow** to manage the files. 
 
 Look:
 ![image](https://github.com/6poiint9/offsec-dots/blob/main/pics/gitpic.png) 
