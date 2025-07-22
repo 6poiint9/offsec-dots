@@ -66,6 +66,16 @@ bindsym $mod+f exec thunar
 
 bindsym $mod+d exec i3lock -i $HOME/.dotfiles/pics/anime.png 
 
+# Fullscreen screenshot
+bindsym Print exec scrot ~/Pictures/screenshot_%Y-%m-%d_%H-%M-%S.png
+
+# Screenshot with selection
+bindsym Shift+s exec scrot -s ~/Pictures/screenshot_%Y-%m-%d_%H-%M-%S.png
+
+# Screenshot after delay (5s)
+#bindsym Mod1+Print exec scrot -d 5 ~/Pictures/screenshot_%Y-%m-%d_%H-%M-%S.png
+
+
 #---------------------------------------------
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
@@ -107,7 +117,7 @@ bindsym $mod+v split v
 bindsym $mod+SHIF+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
+#bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
@@ -193,6 +203,13 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
+
+# Resize window directly without entering resize mode
+bindsym $mod+Ctrl+Left resize shrink width 10 px or 10 ppt
+bindsym $mod+Ctrl+Right resize grow width 10 px or 10 ppt
+bindsym $mod+Ctrl+Up resize shrink height 10 px or 10 ppt
+bindsym $mod+Ctrl+Down resize grow height 10 px or 10 ppt
+
 
 # window colors 
 set $bg-color  #6666cc
