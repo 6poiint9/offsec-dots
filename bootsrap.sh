@@ -37,6 +37,9 @@ fi
 echo "--- installing tools for i3 wm ---"
 sudo apt install -y fastfetch vim nvim scrot i3 i3lock suckless-tools nitrogen kitty npm 
 
+# --- install offsec tools ---
+sudo apt install python3-pip pypy3-venv python3.13-venv odat 
+
 # --- install additional apps ---
 echo "--- installing librewolf via extrepo ---"
 sudo apt install -y extrepo
