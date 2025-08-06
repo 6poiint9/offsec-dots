@@ -28,6 +28,7 @@ Ideally install it on a Kali Linux base installation.
 # Some manual-steps 👷 :
 
 
+
 # Get Nessus
 1) Visit https://www.tenable.com/downloads/nessus and install the .deb package
 2) Install the package 
@@ -38,7 +39,7 @@ Ideally install it on a Kali Linux base installation.
 
 4) To start using it run 
    ```sh
-   systemctl start nessusd
+   sudo systemctl start nessusd
    ```
 
 # Neovim (with Nvchad) setup 
