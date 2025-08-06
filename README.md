@@ -25,6 +25,21 @@ Ideally install it on a Kali Linux base installation.
    ```sh 
    stow --adapt . 
    ``` 
+# Some manual-steps 👷 :
+
+
+# Get Nessus
+1) Visit https://www.tenable.com/downloads/nessus and install the .deb package
+2) Install the package 
+   ```sh
+   sudo dpkg -i Nessus-<version>-debian9_amd64.deb
+   ```
+3) Go to https://localhost:8834 and complete the setup 
+
+4) To start using it run 
+   ```sh
+   systemctl start nessusd
+   ```
 
 # Neovim (with Nvchad) setup 
 Once the bootsrap.sh script is done running, and the files have been linked with stow.
