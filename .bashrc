@@ -161,3 +161,4 @@ if ! shopt -oq posix; then
   fi
 fi
 source -- ~/.local/share/blesh/ble.sh
+export PATH=$PATH:/usr/share/doc/python3-impacket/examples

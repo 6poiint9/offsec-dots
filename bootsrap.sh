@@ -38,7 +38,15 @@ echo "--- installing tools for i3 wm ---"
 sudo apt install -y fastfetch vim nvim scrot i3 i3lock suckless-tools nitrogen kitty npm 
 
 # --- install offsec tools ---
-sudo apt install python3-pip pypy3-venv python3.13-venv odat 
+sudo apt install python3-pip pypy3-venv python3.13-venv odat ssh-audit enum4linux-ng /
+mariadb-client freerdp3-dev hashcat seclists nmap snmp braa metasploit-framework /
+smbmap  samba-common-bin enum4linux dnsenum fierce evil_winrm     
+
+cd ~ && git clone https://github.com/CiscoCXSecurity/rdp-sec-check.git 
+
+# --- symlink some nice impacket tools for global access ---
+sudo ln -s /usr/share/doc/python3-impacket/examples/samrdump.py /usr/local/bin/samrdump.py
+sudo ln -s /usr/share/doc/python3-impacket/examples/mssqlclient.py /usr/local/bin/mssqlclient.py 
 
 # --- install additional apps ---
 echo "--- installing librewolf via extrepo ---"

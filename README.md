@@ -37,4 +37,19 @@ Once the bootsrap.sh script is done running, and the files have been linked with
   :MasonInstallAll
   ```
 
+# Get RDP security check tool
+the repo is already cloned in the bootsrao.sh script
+
+=> open up a terminal and run:
+ ```sh
+ sudo cpan 
+ #within cpan
+ install Encoding::BER
+ exit 
+ ```
+
+
+
+
+
 
