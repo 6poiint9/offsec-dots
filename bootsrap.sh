@@ -38,9 +38,15 @@ echo "--- installing tools for i3 wm ---"
 sudo apt install -y fastfetch vim nvim scrot i3 i3lock suckless-tools nitrogen kitty npm 
 
 # --- install offsec tools ---
-sudo apt install python3-pip pypy3-venv python3.13-venv odat ssh-audit enum4linux-ng /
+sudo apt install -y python3-pip pypy3-venv python3.13-venv odat ssh-audit enum4linux-ng /
 mariadb-client freerdp3-dev hashcat seclists nmap snmp braa metasploit-framework /
-smbmap  samba-common-bin enum4linux dnsenum fierce evil_winrm     
+smbmap  samba-common-bin enum4linux dnsenum fierce evil_winrm exploitdb ncat 
+
+# --- get OpenVAS scanner ---
+# (This can take some time)
+sudo apt install -y gvm openvas
+#gvm-setup 
+
 
 cd ~ && git clone https://github.com/CiscoCXSecurity/rdp-sec-check.git 
 
