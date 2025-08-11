@@ -43,20 +43,24 @@ Ideally install it on a Kali Linux base installation.
    ```
 
 # Get OpenVAS 
-1) Download packages (note down the username and password while installation!):
+1) Download packages:
    ```sh
-   sudo apt install gvm openvas
+   sudo apt install gvm 
    ```
-2) Start it up with:
+2) Start set-up (note down the username and password while setup!):
+   ```sh
+   sudo gvm-check-setup
+   ```
+3) Start it up with:
    ```sh
    sudo gvm-start
    ```
-3) Login to https://127.0.0.1:9392/ and use it. If you **forgot to note down the password**
+4) Login to https://127.0.0.1:9392/ and use it. If you **forgot to note down the password**
    set up a new one:
    ```sh
    sudo -E -u gvm -g  gvm gvmd —user=admin —new-password=NEW_PASSWD
    ```
-4) After usage close it:
+5) After usage close it:
    ```sh
    sudo gvm-stop
    ```
