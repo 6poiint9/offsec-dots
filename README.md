@@ -51,7 +51,7 @@ Ideally install it on a Kali Linux base installation.
    ```sh
    sudo gvm-start
    ```
-3) Login to https://127.0.0.1:9392/ and use it. If you forgot to note down the password
+3) Login to https://127.0.0.1:9392/ and use it. If you **forgot to note down the password**
    set up a new one:
    ```sh
    sudo -E -u gvm -g  gvm gvmd —user=admin —new-password=NEW_PASSWD
@@ -73,7 +73,7 @@ Once the bootsrap.sh script is done running, and the files have been linked with
   ```
 
 # Get RDP security check tool
-the repo is already cloned in the bootsrao.sh script
+the repo is already cloned in the bootsrap.sh script
 
 => open up a terminal and run:
  ```sh
