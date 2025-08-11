@@ -42,6 +42,25 @@ Ideally install it on a Kali Linux base installation.
    sudo systemctl start nessusd
    ```
 
+# Get OpenVAS 
+1) Download packages (note down the username and password while installation!):
+   ```sh
+   sudo apt install gvm openvas
+   ```
+2) Start it up with:
+   ```sh
+   sudo gvm-start
+   ```
+3) Login to https://127.0.0.1:9392/ and use it. If you forgot to note down the password
+   set up a new one:
+   ```sh
+   sudo -E -u gvm -g  gvm gvmd —user=admin —new-password=NEW_PASSWD
+   ```
+4) After usage close it:
+   ```sh
+   sudo gvm-stop
+   ```
+
 # Neovim (with Nvchad) setup 
 Once the bootsrap.sh script is done running, and the files have been linked with stow.
 

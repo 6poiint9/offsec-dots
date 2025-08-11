@@ -40,7 +40,7 @@ sudo apt install -y fastfetch vim nvim scrot i3 i3lock suckless-tools nitrogen k
 # --- install offsec tools ---
 sudo apt install -y python3-pip pypy3-venv python3.13-venv odat ssh-audit enum4linux-ng /
 mariadb-client freerdp3-dev hashcat seclists nmap snmp braa metasploit-framework /
-smbmap  samba-common-bin enum4linux dnsenum fierce evil_winrm exploitdb ncat 
+smbmap  samba-common-bin enum4linux dnsenum fierce evil_winrm exploitdb ncat impacket-scripts  
 
 # --- get OpenVAS scanner ---
 # (This can take some time)
