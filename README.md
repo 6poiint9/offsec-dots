@@ -49,6 +49,8 @@ Ideally install it on a Kali Linux base installation.
    ```
 2) Start set-up (note down the username and password while setup!):
    ```sh
+   sudo gvm-setup
+   # verify the setup 
    sudo gvm-check-setup
    ```
 3) Start it up with:
