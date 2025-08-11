@@ -42,13 +42,16 @@ sudo apt install -y python3-pip pypy3-venv python3.13-venv odat ssh-audit enum4l
 mariadb-client freerdp3-dev hashcat seclists nmap snmp braa metasploit-framework /
 smbmap  samba-common-bin enum4linux dnsenum fierce evil_winrm exploitdb ncat impacket-scripts  
 
-# --- get OpenVAS scanner ---
-# (This can take some time)
-sudo apt install -y gvm openvas
-#gvm-setup 
-
-
 cd ~ && git clone https://github.com/CiscoCXSecurity/rdp-sec-check.git 
+
+# --- install pip offsec tools ---
+cd ~
+mkdir -p offsec/py
+python3 -m venv ~/offsec/py
+source ~/offsec/py/bin/activate
+pip3 install pyftpdlib uploadserver wsgidav cheroot
+deactivate 
+
 
 # --- symlink some nice impacket tools for global access ---
 sudo ln -s /usr/share/doc/python3-impacket/examples/samrdump.py /usr/local/bin/samrdump.py
