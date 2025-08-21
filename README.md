@@ -66,7 +66,10 @@ Ideally install it on a Kali Linux base installation.
    ```sh
    sudo gvm-stop
    ```
-
+# Get Burp Suite
+1) Go to https://portswigger.net/burp/releases/ and download it 
+2) Run the install script 
+  
 # Neovim (with Nvchad) setup 
 Once the bootsrap.sh script is done running, and the files have been linked with stow.
 
