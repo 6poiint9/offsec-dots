@@ -10,6 +10,10 @@ echo "--- install stow and update system ---"
 sudo apt update
 sudo apt install -y stow git gawk make 
 
+# --- install i3 and tools ---
+echo "--- installing tools for i3 wm ---"
+sudo apt install -y fastfetch vim nvim scrot i3 i3lock suckless-tools nitrogen kitty npm 
+
 # --- Clone dotfiles repo if needed ---
 
 if [ ! -d "$DOTFILES_DIR" ]; then
@@ -33,15 +37,12 @@ if [ ! -d "$HOME/ble.sh" ]; then
   cd "$DOTFILES_DIR"
 fi
 
-# --- install i3 and tools ---
-echo "--- installing tools for i3 wm ---"
-sudo apt install -y fastfetch vim nvim scrot i3 i3lock suckless-tools nitrogen kitty npm 
-
 # --- install offsec tools ---
 sudo apt install -y python3-pip pypy3-venv python3.13-venv odat ssh-audit enum4linux-ng /
 mariadb-client freerdp3-dev hashcat seclists nmap snmp braa metasploit-framework /
 smbmap  samba-common-bin enum4linux dnsenum fierce evil_winrm exploitdb ncat /
-impacket-scripts httpie dirb laudanum nishang hashid 
+impacket-scripts httpie dirb laudanum nishang hashid cewl html2text dislocker /
+netexec 
 
 cd ~ && git clone https://github.com/CiscoCXSecurity/rdp-sec-check.git 
 
