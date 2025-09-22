@@ -12,7 +12,7 @@ sudo apt install -y stow git gawk make
 
 # --- install i3 and tools ---
 echo "--- installing tools for i3 wm ---"
-sudo apt install -y fastfetch vim nvim scrot i3 i3lock suckless-tools nitrogen kitty npm 
+sudo apt install -y fastfetch vim nvim scrot i3 i3lock suckless-tools nitrogen kitty npm cifs-utils 
 
 # --- Clone dotfiles repo if needed ---
 
@@ -40,17 +40,19 @@ fi
 # --- install offsec tools ---
 sudo apt install -y python3-pip pypy3-venv python3.13-venv odat ssh-audit enum4linux-ng /
 mariadb-client freerdp3-dev hashcat seclists nmap snmp braa metasploit-framework /
-smbmap  samba-common-bin enum4linux dnsenum fierce evil_winrm exploitdb ncat /
+smbmap  samba-common-bin enum4linux dnsenum fierce evil-winrm exploitdb ncat /
 impacket-scripts httpie dirb laudanum nishang hashid cewl html2text dislocker /
 netexec krb5-user ligolo-ng gobuster cifs-utils evolution sqsh dbeaver medusa /
-crackmapexec responder crowbar ettercap smtp-user-enum 
+crackmapexec responder crowbar ettercap smtp-user-enum chisel ettercap-graphical /
+hydra laudanum nginx nginx-common proxychains4 wireshark wireshark-common libwiretap15 /
+tshark ssh-audit 
 
 # --- install pip offsec tools ---
 cd ~
 mkdir -p offsec/py
 python3 -m venv ~/offsec/py
 source ~/offsec/py/bin/activate
-pip3 install pyftpdlib uploadserver wsgidav cheroot
+pip3 install pyftpdlib uploadserver wsgidav cheroot 
 deactivate 
 
 # --- install github tools ---
@@ -68,9 +70,10 @@ git clone https://github.com/CiscoCXSecurity/rdp-sec-check.git
 git clone https://github.com/projectdiscovery/subfinder.git
 git clone https://github.com/TheRook/subbrute.git
 git clone https://github.com/0xZDH/o365spray.git
-
+git clone https://github.com/lgandx/PCredz.git
+git clone https://github.com/urbanadventurer/username-anarchy.git
 # --- install additional apps ---
-echo "--- installing librewolf via extrepo ---"
+cd
 sudo apt install -y extrepo
 sudo extrepo enable librewolf
 sudo apt update
