@@ -42,9 +42,8 @@ sudo apt install -y python3-pip pypy3-venv python3.13-venv odat ssh-audit enum4l
 mariadb-client freerdp3-dev hashcat seclists nmap snmp braa metasploit-framework /
 smbmap  samba-common-bin enum4linux dnsenum fierce evil_winrm exploitdb ncat /
 impacket-scripts httpie dirb laudanum nishang hashid cewl html2text dislocker /
-netexec 
-
-cd ~ && git clone https://github.com/CiscoCXSecurity/rdp-sec-check.git 
+netexec krb5-user ligolo-ng gobuster cifs-utils evolution sqsh dbeaver medusa /
+crackmapexec responder crowbar ettercap smtp-user-enum 
 
 # --- install pip offsec tools ---
 cd ~
@@ -54,10 +53,21 @@ source ~/offsec/py/bin/activate
 pip3 install pyftpdlib uploadserver wsgidav cheroot
 deactivate 
 
-
-# --- symlink some nice impacket tools for global access ---
-sudo ln -s /usr/share/doc/python3-impacket/examples/samrdump.py /usr/local/bin/samrdump.py
-sudo ln -s /usr/share/doc/python3-impacket/examples/mssqlclient.py /usr/local/bin/mssqlclient.py 
+# --- install github tools ---
+cd ~
+mkdir tools && cd tools
+git clone https://github.com/CiscoCXSecurity/rdp-sec-check.git 
+git clone https://github.com/dirkjanm/PKINITtools.git && cd PKINITtools
+source ~/offsec/py/bin/activate
+pip3 install -r requirements.txt
+deactivate 
+cd ..
+git clone https://github.com/dirkjanm/krbrelayx.git
+git clone https://github.com/ShutdownRepo/pywhisker.git
+git clone https://github.com/CiscoCXSecurity/rdp-sec-check.git
+git clone https://github.com/projectdiscovery/subfinder.git
+git clone https://github.com/TheRook/subbrute.git
+git clone https://github.com/0xZDH/o365spray.git
 
 # --- install additional apps ---
 echo "--- installing librewolf via extrepo ---"
@@ -78,4 +88,5 @@ echo "--- bootstrap complete ---"
 # () set up librewolf (background, dark mode)
 # () Set up a new background pic for lightdm if needed 
 # () go to $HOM$/.dotfiles and run $ stow .   
+
 
