@@ -72,6 +72,20 @@ git clone https://github.com/TheRook/subbrute.git
 git clone https://github.com/0xZDH/o365spray.git
 git clone https://github.com/lgandx/PCredz.git
 git clone https://github.com/urbanadventurer/username-anarchy.git
+
+# --- install executables to transfer ---
+cd ~
+mkdir ~/transfer && cd  ~/transfer
+wget -O ~/transfer/winPEAS64.exe https://github.com/peass-ng/PEASS-ng/releases/download/20250904-27f4363e/winPEASx64.exe
+wget -O ~/transfer/winPEAS84.exe https://github.com/peass-ng/PEASS-ng/releases/download/20250904-27f4363e/winPEASx86.exe
+wget -O ~/transfer/linpeas.sh https://github.com/peass-ng/PEASS-ng/releases/download/20250904-27f4363e/linpeas_linux_amd64
+wget -O ~/transfer/linEnum.sh https://github.com/rebootuser/LinEnum/blob/master/LinEnum.sh
+wget https://github.com/gentilkiwi/mimikatz/releases/download/2.2.0-20220919/mimikatz_trunk.zip
+wget -O ~/transfer/LaZagne.exe https://github.com/AlessandroZ/LaZagne/releases/download/v2.4.7/LaZagne.exe
+wget https://github.com/nicocha30/ligolo-ng/releases/download/v0.8.2/ligolo-ng_agent_0.8.2_linux_amd64.tar.gz
+wget https://github.com/nicocha30/ligolo-ng/releases/download/v0.8.2/ligolo-ng_proxy_0.8.2_linux_amd64.tar.gz
+wget https://github.com/nicocha30/ligolo-ng/releases/download/v0.8.2/ligolo-ng_agent_0.8.2_windows_amd64.zip
+wget https://github.com/nicocha30/ligolo-ng/releases/download/v0.8.2/ligolo-ng_proxy_0.8.2_windows_amd64.zip
 # --- install additional apps ---
 cd
 sudo apt install -y extrepo
