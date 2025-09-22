@@ -79,7 +79,6 @@ mkdir ~/transfer && cd  ~/transfer
 wget -O ~/transfer/winPEAS64.exe https://github.com/peass-ng/PEASS-ng/releases/download/20250904-27f4363e/winPEASx64.exe
 wget -O ~/transfer/winPEAS84.exe https://github.com/peass-ng/PEASS-ng/releases/download/20250904-27f4363e/winPEASx86.exe
 wget -O ~/transfer/linpeas.sh https://github.com/peass-ng/PEASS-ng/releases/download/20250904-27f4363e/linpeas_linux_amd64
-wget -O ~/transfer/linEnum.sh https://github.com/rebootuser/LinEnum/blob/master/LinEnum.sh
 wget https://github.com/gentilkiwi/mimikatz/releases/download/2.2.0-20220919/mimikatz_trunk.zip
 wget -O ~/transfer/LaZagne.exe https://github.com/AlessandroZ/LaZagne/releases/download/v2.4.7/LaZagne.exe
 wget https://github.com/nicocha30/ligolo-ng/releases/download/v0.8.2/ligolo-ng_agent_0.8.2_linux_amd64.tar.gz
@@ -101,9 +100,9 @@ cd /etc && sudo mv i3status.conf i3status.back && ln ~/.dotfiles/.config/i3statu
 
 echo "--- bootstrap complete ---"
 
-# Finalizing steps:
-# () set up librewolf (background, dark mode)
-# () Set up a new background pic for lightdm if needed 
-# () go to $HOM$/.dotfiles and run $ stow .   
+
+info "Bootstrap complete!!! Final manual steps:"
+echo "1. Log out and log back in if shell was changed."
+echo "2. Run: cd ~/.dotfiles && stow .
 
 
