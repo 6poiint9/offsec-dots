@@ -41,7 +41,7 @@ impacket-scripts httpie dirb laudanum nishang hashid cewl html2text dislocker \
 netexec krb5-user ligolo-ng gobuster cifs-utils evolution sqsh dbeaver medusa \
 crackmapexec responder crowbar ettercap-common smtp-user-enum chisel ettercap-graphical \
 hydra laudanum nginx nginx-common proxychains4 wireshark wireshark-common libwiretap15 \
-tshark ssh-audit libreoffice libreoffice-gtk4
+tshark ssh-audit libreoffice libreoffice-gtk4 john
 
 # --- install pip offsec tools ---
 cd ~
