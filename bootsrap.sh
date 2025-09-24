@@ -12,7 +12,7 @@ sudo apt install -y stow git gawk make
 
 # --- install i3 and tools ---
 echo "--- installing tools for i3 wm ---"
-sudo apt install -y fastfetch vim nvim scrot i3 i3lock suckless-tools nitrogen kitty npm cifs-utils 
+sudo apt install -y fastfetch vim neovim scrot i3 i3lock suckless-tools nitrogen kitty npm cifs-utils 
 
 # --- Clone dotfiles repo if needed ---
 
