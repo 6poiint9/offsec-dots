@@ -64,7 +64,6 @@ deactivate
 cd ..
 git clone https://github.com/dirkjanm/krbrelayx.git
 git clone https://github.com/ShutdownRepo/pywhisker.git
-git clone https://github.com/CiscoCXSecurity/rdp-sec-check.git
 git clone https://github.com/projectdiscovery/subfinder.git
 git clone https://github.com/TheRook/subbrute.git
 git clone https://github.com/0xZDH/o365spray.git
