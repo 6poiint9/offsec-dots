@@ -43,6 +43,7 @@ crackmapexec responder crowbar ettercap-common smtp-user-enum chisel ettercap-gr
 hydra laudanum nginx nginx-common proxychains4 wireshark wireshark-common libwiretap15 \
 tshark ssh-audit libreoffice libreoffice-gtk4 john
 
+echo "--- Installed offsec tools! ---" 
 # --- install pip offsec tools ---
 cd ~
 mkdir -p offsec/py
@@ -51,6 +52,7 @@ source ~/offsec/py/bin/activate
 pip3 install pyftpdlib uploadserver wsgidav cheroot 
 deactivate 
 
+echo "--- installed pip tools ---"
 # --- install github tools ---
 cd ~
 mkdir tools && cd tools
@@ -69,6 +71,7 @@ git clone https://github.com/0xZDH/o365spray.git
 git clone https://github.com/lgandx/PCredz.git
 git clone https://github.com/urbanadventurer/username-anarchy.git
 
+echo "--- installed GitHub tools ---"
 # --- install executables to transfer ---
 cd ~
 mkdir ~/transfer && cd  ~/transfer
@@ -81,13 +84,16 @@ wget https://github.com/nicocha30/ligolo-ng/releases/download/v0.8.2/ligolo-ng_a
 wget https://github.com/nicocha30/ligolo-ng/releases/download/v0.8.2/ligolo-ng_proxy_0.8.2_linux_amd64.tar.gz
 wget https://github.com/nicocha30/ligolo-ng/releases/download/v0.8.2/ligolo-ng_agent_0.8.2_windows_amd64.zip
 wget https://github.com/nicocha30/ligolo-ng/releases/download/v0.8.2/ligolo-ng_proxy_0.8.2_windows_amd64.zip
-# --- install additional apps ---
+
+echo "--- installed tools to transfer---"
+# --- install librewolf browser ---
 cd
 sudo apt install -y extrepo
 sudo extrepo enable librewolf
 sudo apt update
 sudo apt install -y librewolf
 
+echo "--- installed browser ---"
 #--- remove annoying kali message ---"
 touch ~/.hushlogin 
 # Remove random dirs 
