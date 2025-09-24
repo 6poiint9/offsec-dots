@@ -94,6 +94,8 @@ sudo apt install -y librewolf
 
 #--- remove annoying kali message ---"
 touch ~/.hushlogin 
+# Remove random dirs 
+rmdir Music Public Videos Templates
 
 # create simlynk for i3-bar 
 cd /etc && sudo mv i3status.conf i3status.back && ln ~/.dotfiles/.config/i3status.conf i3status.conf
