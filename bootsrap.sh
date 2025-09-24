@@ -34,13 +34,13 @@ make -C ble.sh install PREFIX=~/.local
 echo 'source -- ~/.local/share/blesh/ble.sh' >> ~/.bashrc
 
 # --- install offsec tools ---
-sudo apt install -y python3-pip pypy3-venv python3.13-venv odat ssh-audit enum4linux-ng /
-mariadb-client freerdp3-dev hashcat seclists nmap snmp braa metasploit-framework /
-smbmap  samba-common-bin enum4linux dnsenum fierce evil-winrm exploitdb ncat /
-impacket-scripts httpie dirb laudanum nishang hashid cewl html2text dislocker /
-netexec krb5-user ligolo-ng gobuster cifs-utils evolution sqsh dbeaver medusa /
-crackmapexec responder crowbar ettercap smtp-user-enum chisel ettercap-graphical /
-hydra laudanum nginx nginx-common proxychains4 wireshark wireshark-common libwiretap15 /
+sudo apt install -y python3-pip pypy3-venv python3.13-venv odat ssh-audit enum4linux-ng \
+mariadb-client freerdp3-dev hashcat seclists nmap snmp braa metasploit-framework \
+smbmap  samba-common-bin enum4linux dnsenum fierce evil-winrm exploitdb ncat \
+impacket-scripts httpie dirb laudanum nishang hashid cewl html2text dislocker \
+netexec krb5-user ligolo-ng gobuster cifs-utils evolution sqsh dbeaver medusa \
+crackmapexec responder crowbar ettercap smtp-user-enum chisel ettercap-graphical \
+hydra laudanum nginx nginx-common proxychains4 wireshark wireshark-common libwiretap15 \
 tshark ssh-audit 
 
 # --- install pip offsec tools ---
