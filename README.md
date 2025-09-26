@@ -12,8 +12,7 @@ Ideally install it on a Kali Linux base installation.
     chmod u+x set_up.sh 
     ./set_up.sh 
     ```
-3) **log out** and in the lightdm login-screen **choose i3** and log in again
-4) Do the **additional steps** noted at the **bottom** of the **script** to finalize the setup
+3) Do the **additional steps** noted at the **bottom** of the **script** to finalize the setup
    
    => mainly **link the files** 
    ```sh 
@@ -24,7 +23,9 @@ Ideally install it on a Kali Linux base installation.
  
    ```sh 
    stow --adapt . 
-   ``` 
+   ```
+ 4) Now you can **choose between i3 or Xfce** Desktop environmen when **loggin into** the lightdm login-screen 
+   
 # Some manual-steps 👷 :
 
 
