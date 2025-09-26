@@ -24,7 +24,8 @@ Ideally install it on a Kali Linux base installation.
    ```sh 
    stow --adapt . 
    ```
- 4) Now you can **choose between i3 or Xfce** Desktop environmen when **loggin into** the lightdm login-screen 
+ 4) Now you can **choose between i3 or Xfce** Desktop environmen when **loggin into** the lightdm login-screen
+ 5) check out https://i3wm.org/docs/userguide.html (general) and https://i3wm.org/docs/i3status.html (bar) if you want to make changes to i3
    
 # Some manual-steps 👷 :
 
