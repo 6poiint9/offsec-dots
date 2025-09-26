@@ -99,7 +99,7 @@ touch ~/.hushlogin
 rmdir Music Public Videos Templates 2>/dev/null 
 
 # create simlynk for i3-bar 
-cd /etc && sudo mv i3status.conf i3status.back && sudo ln ~/.dotfiles/.config/i3status.conf i3status.conf
+cd /etc && sudo cp i3status.conf ~/.dotfiles/.config/ && sudo mv i3status.conf i3status.back && sudo ln ~/.dotfiles/.config/i3status.conf i3status.conf
 
 echo "--- bootstrap complete ---"
 
