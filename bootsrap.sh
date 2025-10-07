@@ -12,7 +12,7 @@ sudo apt install -y stow git gawk make
 
 # --- install i3 and tools ---
 echo "--- installing tools for i3 wm ---"
-sudo apt install -y fastfetch vim neovim scrot i3 i3lock suckless-tools nitrogen kitty npm cifs-utils 
+sudo apt install -y fastfetch vim neovim scrot i3 i3lock suckless-tools nitrogen kitty npm cifs-utils automake autoconf
 
 # --- Clone dotfiles repo if needed ---
 
@@ -41,7 +41,7 @@ impacket-scripts httpie dirb laudanum nishang hashid cewl html2text dislocker \
 netexec krb5-user ligolo-ng gobuster cifs-utils evolution sqsh dbeaver medusa \
 crackmapexec responder crowbar ettercap-common smtp-user-enum chisel ettercap-graphical \
 hydra laudanum nginx nginx-common proxychains4 wireshark wireshark-common libwiretap15 \
-tshark ssh-audit libreoffice libreoffice-gtk4 john
+tshark ssh-audit libreoffice libreoffice-gtk4 john socat sshuttle python2.7-minimal
 
 echo "--- Installed offsec tools! ---" 
 # --- install pip offsec tools ---
@@ -69,7 +69,13 @@ git clone https://github.com/TheRook/subbrute.git
 git clone https://github.com/0xZDH/o365spray.git
 git clone https://github.com/lgandx/PCredz.git
 git clone https://github.com/urbanadventurer/username-anarchy.git
-
+git clone https://github.com/klsecservices/rpivot.git
+git clone https://github.com/lukebaggett/dnscat2-powershell.git
+git clone git clone https://github.com/iagox86/dnscat2.git
+git clone https://github.com/utoni/ptunnel-ng.git
+cd ~ && mkdir -p wordlists/user && cd wordlists/user
+git clone https://github.com/insidetrust/statistically-likely-usernames.git
+cd ~
 echo "--- installed GitHub tools ---"
 # --- install executables to transfer ---
 cd ~
@@ -83,6 +89,8 @@ wget https://github.com/nicocha30/ligolo-ng/releases/download/v0.8.2/ligolo-ng_a
 wget https://github.com/nicocha30/ligolo-ng/releases/download/v0.8.2/ligolo-ng_proxy_0.8.2_linux_amd64.tar.gz
 wget https://github.com/nicocha30/ligolo-ng/releases/download/v0.8.2/ligolo-ng_agent_0.8.2_windows_amd64.zip
 wget https://github.com/nicocha30/ligolo-ng/releases/download/v0.8.2/ligolo-ng_proxy_0.8.2_windows_amd64.zip
+wget https://github.com/jpillora/chisel/releases/download/v1.11.3/chisel_1.11.3_windows_amd64.zip
+wget https://github.com/jpillora/chisel/releases/download/v1.11.3/chisel_1.11.3_darwin_amd64.gz
 
 echo "--- installed tools to transfer---"
 # --- install librewolf browser ---
@@ -107,5 +115,3 @@ echo "--- bootstrap complete ---"
 info "Bootstrap complete!!! Final manual steps:"
 echo "1. Log out and log back in if shell was changed."
 echo "2. Run: cd ~/.dotfiles && stow .
-
-
