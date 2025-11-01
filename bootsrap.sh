@@ -41,8 +41,8 @@ impacket-scripts httpie dirb laudanum nishang hashid cewl html2text dislocker \
 netexec krb5-user ligolo-ng gobuster cifs-utils evolution sqsh dbeaver medusa \
 crackmapexec responder crowbar ettercap-common smtp-user-enum chisel ettercap-graphical \
 hydra laudanum nginx nginx-common proxychains4 wireshark wireshark-common libwiretap15 \
-tshark ssh-audit libreoffice libreoffice-gtk4 john socat sshuttle python2.7-minimal
-
+tshark ssh-audit libreoffice libreoffice-gtk4 john socat sshuttle python2.7-minimal \
+fping golang-go
 echo "--- Installed offsec tools! ---" 
 # --- install pip offsec tools ---
 cd ~
@@ -73,6 +73,14 @@ git clone https://github.com/klsecservices/rpivot.git
 git clone https://github.com/lukebaggett/dnscat2-powershell.git
 git clone git clone https://github.com/iagox86/dnscat2.git
 git clone https://github.com/utoni/ptunnel-ng.git
+git clone https://github.com/sm00v/Dehashed.git
+git clone https://github.com/ropnop/go-windapsearch.git
+wget https://github.com/ropnop/go-windapsearch/releases/download/v0.3.0/windapsearch-linux-amd64
+git clone https://github.com/ropnop/kerbrute.git
+cd kerbrute
+sudo make all
+export PATH="$PATH:$HOME/tools/kerbrute/dist"
+source ~/.bashrc
 cd ~ && mkdir -p wordlists/user && cd wordlists/user
 git clone https://github.com/insidetrust/statistically-likely-usernames.git
 cd ~
@@ -91,6 +99,12 @@ wget https://github.com/nicocha30/ligolo-ng/releases/download/v0.8.2/ligolo-ng_a
 wget https://github.com/nicocha30/ligolo-ng/releases/download/v0.8.2/ligolo-ng_proxy_0.8.2_windows_amd64.zip
 wget https://github.com/jpillora/chisel/releases/download/v1.11.3/chisel_1.11.3_windows_amd64.zip
 wget https://github.com/jpillora/chisel/releases/download/v1.11.3/chisel_1.11.3_darwin_amd64.gz
+wget https://github.com/dafthack/DomainPasswordSpray/blob/master/DomainPasswordSpray.ps1
+git clone https://github.com/PowerShellMafia/PowerSploit.git
+wget https://github.com/jakobfriedl/precompiled-binaries/raw/main/Enumeration/SharpView.exe
+wget https://github.com/SnaffCon/Snaffler/releases/download/1.0.224/Snaffler.exe
+wget https://github.com/jakobfriedl/precompiled-binaries/raw/main/Enumeration/SharpHound/SharpHound.ps1
+
 
 echo "--- installed tools to transfer---"
 # --- install librewolf browser ---
