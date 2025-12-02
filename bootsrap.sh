@@ -74,6 +74,7 @@ git clone https://github.com/lukebaggett/dnscat2-powershell.git
 git clone git clone https://github.com/iagox86/dnscat2.git
 git clone https://github.com/utoni/ptunnel-ng.git
 git clone https://github.com/sm00v/Dehashed.git
+git clone https://github.com/cube0x0/CVE-2021-1675.git
 git clone https://github.com/ropnop/go-windapsearch.git
 git clone https://github.com/Ridter/noPac.git
 wget https://github.com/ropnop/go-windapsearch/releases/download/v0.3.0/windapsearch-linux-amd64
