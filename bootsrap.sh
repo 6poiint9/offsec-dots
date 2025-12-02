@@ -75,6 +75,7 @@ git clone git clone https://github.com/iagox86/dnscat2.git
 git clone https://github.com/utoni/ptunnel-ng.git
 git clone https://github.com/sm00v/Dehashed.git
 git clone https://github.com/ropnop/go-windapsearch.git
+git clone https://github.com/Ridter/noPac.git
 wget https://github.com/ropnop/go-windapsearch/releases/download/v0.3.0/windapsearch-linux-amd64
 git clone https://github.com/ropnop/kerbrute.git
 cd kerbrute
@@ -104,7 +105,7 @@ git clone https://github.com/PowerShellMafia/PowerSploit.git
 wget https://github.com/jakobfriedl/precompiled-binaries/raw/main/Enumeration/SharpView.exe
 wget https://github.com/SnaffCon/Snaffler/releases/download/1.0.224/Snaffler.exe
 wget https://github.com/jakobfriedl/precompiled-binaries/raw/main/Enumeration/SharpHound/SharpHound.ps1
-
+wget https://github.com/ohpe/juicy-potato/releases/download/v0.1/JuicyPotato.exe
 
 echo "--- installed tools to transfer---"
 # --- install librewolf browser ---
