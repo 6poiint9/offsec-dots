@@ -77,6 +77,7 @@ git clone https://github.com/sm00v/Dehashed.git
 git clone https://github.com/cube0x0/CVE-2021-1675.git
 git clone https://github.com/ropnop/go-windapsearch.git
 git clone https://github.com/Ridter/noPac.git
+git clone https://github.com/topotam/PetitPotam.git
 wget https://github.com/ropnop/go-windapsearch/releases/download/v0.3.0/windapsearch-linux-amd64
 git clone https://github.com/ropnop/kerbrute.git
 cd kerbrute
