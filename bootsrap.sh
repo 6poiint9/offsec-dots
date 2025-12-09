@@ -50,6 +50,7 @@ mkdir -p offsec/py
 python3 -m venv ~/offsec/py
 source ~/offsec/py/bin/activate
 pip3 install pyftpdlib uploadserver wsgidav cheroot 
+pip install git+https://github.com/dirkjanm/adidnsdump#egg=adidnsdump
 deactivate 
 
 echo "--- installed pip tools ---"
