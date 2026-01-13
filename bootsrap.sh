@@ -42,7 +42,7 @@ netexec krb5-user ligolo-ng gobuster cifs-utils evolution sqsh dbeaver medusa \
 crackmapexec responder crowbar ettercap-common smtp-user-enum chisel ettercap-graphical \
 hydra laudanum nginx nginx-common proxychains4 wireshark wireshark-common libwiretap15 \
 tshark ssh-audit libreoffice libreoffice-gtk4 john socat sshuttle python2.7-minimal \
-fping golang-go gpp-decrypt whois nikto scrapy ffuf finalrecon
+fping golang-go gpp-decrypt whois nikto scrapy ffuf finalrecon cupp
 echo "--- Installed offsec tools! ---" 
 # --- install pip offsec tools ---
 cd ~
