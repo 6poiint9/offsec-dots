@@ -64,6 +64,12 @@ pip3 install -r requirements.txt
 deactivate 
 cd ..
 git clone https://github.com/dirkjanm/krbrelayx.git
+git clone https://github.com/s0md3v/XSStrike.git
+cd XSStrike
+source ~/offsec/py/bin/activate
+pip install -r requirements.txt
+deactivate
+cd ..
 git clone https://github.com/ShutdownRepo/pywhisker.git
 git clone https://github.com/projectdiscovery/subfinder.git
 git clone https://github.com/TheRook/subbrute.git
